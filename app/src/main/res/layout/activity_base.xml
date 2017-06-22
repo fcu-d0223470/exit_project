@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:background="@color/colorPrimaryDark">
+
+    <Button
+        android:id="@+id/btnSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Pack"
+        android:background="@color/colorNone"
+        android:textColor="@android:color/background_light"
+        style="bottom_tab_btn"/>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="home"
+        style="bottom_tab_btn"
+        android:background="@color/colorNone"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Setting"
+        android:background="@color/colorNone"
+        android:textColor="@android:color/background_light"
+        style="bottom_tab_btn"/>
+
+</LinearLayout>

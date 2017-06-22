@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jacky.androidprogram.subpages.Settings">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSetting"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="132dp"
+            app:srcCompat="@drawable/accountw"
+            android:id="@+id/imageView"
+            android:layout_weight="0.20" />
+
+        <TextView
+            android:text="Hi,"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_tv"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:layout_weight="0.08" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit My Account"
+            android:textAllCaps="false"
+            android:id="@+id/setmyacc"
+            android:textColor="#ffffff"
+            android:background="#00ffffff"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Phone"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="#00ffffff"
+            android:clickable="true"
+            android:id="@+id/setcphone"
+            android:layout_below="@+id/setmyacc"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

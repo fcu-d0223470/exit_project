@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+ext {
+  bintrayRepo = 'maven'
+  bintrayName = 'askpermission'
+
+  publishedGroupId = 'com.kishan.askpermission'
+  libraryName = 'AskPermission'
+  artifact = 'askpermission'
+
+  libraryDescription = 'Ask Permission'
+
+  siteUrl = 'https://github.com/Kishanjvaghela/Ask-Permission'
+  gitUrl = 'https://github.com/Kishanjvaghela/Ask-Permission.git'
+
+  libraryVersion = '1.0'
+
+  developerId = 'kishanvaghela'
+  developerName = 'Kishan Vaghela'
+  developerEmail = 'kishan.j.vaghela@gmail.com'
+
+  licenseName = 'The Apache Software License, Version 2.0'
+  licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+  allLicenses = ["Apache-2.0"]
+}
+android {
+  compileSdkVersion 24
+  buildToolsVersion "24.0.3"
+
+  defaultConfig {
+    minSdkVersion 15
+    targetSdkVersion 24
+    versionCode 1
+    versionName "1.0"
+
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  compile 'com.android.support:appcompat-v7:24.2.1'
+  compile 'com.android.support:support-v13:24.2.1'
+  testCompile 'junit:junit:4.12'
+  androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+  androidTestCompile 'com.android.support.test:runner:0.5'
+  androidTestCompile 'com.android.support:support-annotations:24.2.1'
+}
